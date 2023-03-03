@@ -1909,7 +1909,7 @@ shared static this() {
 
 		"SCRIPT" : "",
 
-		"UNDOCUMENTED": "<span class=\"undocumented-note\">$0</span>",
+		"UNDOCUMENTED": "<span class=\"undocumented-note\"></span>",
 
 		// Useless crap that should just be replaced
 		"REF_SHORT" : `<a href="$2.$3.$1.html">$1</a>`,
