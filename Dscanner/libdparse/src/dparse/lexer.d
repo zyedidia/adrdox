@@ -460,9 +460,7 @@ const(Token)[] getTokensForParser(ubyte[] sourceCode, LexerConfig config,
 
     static CommentType commentType(string comment) pure nothrow @safe
     {
-        if (comment.length < 3)
-            return CommentType.notDoc;
-        if (comment[0 ..3] == "///")
+        if (comment[0 .. 2] == "//")
             return CommentType.line;
         if (comment[0 ..3] == "/++" || comment[0 ..3] == "/**")
             return CommentType.block;
